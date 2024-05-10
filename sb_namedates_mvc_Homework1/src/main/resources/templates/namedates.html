@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	
+	
+	<body>
+	
+		<table>
+			<tr>
+				<th>Date</th>
+				<th>Name</th>
+			</tr>
+			<tr th:each="dto : ${ndldto.getNameDates()}">
+				<td th:text="${dto.getDate()}"></td>
+				<td th:text="${dto.getName()}"></td>
+			</tr>
+		</table>
+	
+	
+	
+	</body>
+</html>
